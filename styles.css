@@ -1,0 +1,191 @@
+body
+{
+	background-color: gray;
+}
+table, tr, th, td
+{
+	border: 1px solid black;
+}
+th, td
+{
+	padding: 5px;
+}
+th
+{
+	background-color: lightgray;
+	color: black;
+	text-align: center;
+	font-size: 17px;
+	font-family: Verdana;
+}
+td:nth-child(even)
+{
+	background-color: beige;
+}
+td
+{
+	text-align: center;
+	font-family: Monaco;
+}
+.header 
+{
+  	padding: 50px;
+  	text-align: center;
+  	font-size: 35px;
+  	color: grey;
+  	font-family: Verdana;
+    background-image: url(image1/bc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+a:link, a:visited
+{
+	color: black;
+	text-decoration: underline;
+	text-align: center;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 20px;
+}
+a:hover, a:active
+{
+	color: black;
+	background-color: gray;
+}
+.navbar {
+	background-color: lightgray;
+	color: white;
+	position: relative;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar h1 {
+	margin: 0;
+	color: white;
+}
+.menu {
+	display: none;
+	flex-direction: column;
+	background-color: white;
+	position: absolute;
+	top: 50px;
+	right: 0;	
+	width: 200px;
+	border: 1px solid #ddd;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.menu a {
+	padding: 10px;
+	text-decoration: none;
+	color: black;
+	text-align: left;
+}
+.menu a:hover {
+	background-color: #f8f8f8;
+}
+.menu.active {
+	display: flex;
+}
+.footer {
+	flex-shrink: 0;
+	background-color: lightgray;
+	color: black;
+	text-align: center;
+	padding: 20px;
+}
+p
+{
+	text-align: center;
+	color: white, black;
+	color: black; 
+	font-family: Arial; 
+	font-size: 15px; 
+	letter-spacing: 1px; 
+	line-height: 1.5;"
+}
+.container 
+{
+    max-width: 900px;
+    margin: 0 auto;  
+    padding: 20px;   
+    background-color: lightpink; 
+    border: 1px solid #ddd;    
+    border-radius: 8px;       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.social-icons a{
+
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	border: 0.2rem solid 
+	font-size: 2rem;
+	border-radius: 50%;
+	margin: 3rem 1.5rem 3rem
+	transition: 0.3s ease;
+}
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 2px;
+}
+
+div.scroll-container img {
+  padding: 2px;
+}
+.gallery
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+	gap: 20px;
+	max-width: 1000px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid darkred;
+	background-color: #FEE2E7;
+}
+.nana
+{
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out;
+}
+.nana img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nana:hover img {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+.nana {
+	opacity: 0;
+	animation: fadeInUp 0.6s forwards;
+}
+.nana:nth-child(odd) {
+	animation-delay: 0.5s;
+}
+.gallery-item:nth-child(even) {
+	animation-delay: 0.5s;
+}
+@keyframes fadeInUp {
+0% {
+	opacity: 0;
+	transform: translateY(20px);
+}
+100% {
+	opacity: 1;
+	transform: translateY(0);
+}
